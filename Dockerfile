@@ -3,7 +3,7 @@ FROM node:latest
 #RUN mkdir /src
 
 #RUN npm install nodemon -g
-#RUN npm install -g pm2@latest
+RUN npm install -g pm2@latest
 
 
 WORKDIR /src
