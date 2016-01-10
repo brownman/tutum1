@@ -3,7 +3,7 @@ FROM node:4.2.3
 #RUN mkdir /src
 
 #RUN npm install nodemon -g
-RUN apt-get install git ssh
+RUN apt-get install git
 RUN npm install -g pm2@latest
 
 
