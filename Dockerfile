@@ -39,4 +39,4 @@ EXPOSE 3002
 
 
 # Run
-CMD [ "npm", "start" ]
+CMD [ "node",  "/root/wetty/app.js" , "-p" , "3002" ]
