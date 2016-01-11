@@ -13,7 +13,7 @@ RUN npm install -g pm2@latest
 VOLUME /root/.npm
 
 WORKDIR /src
-VOLUME ["/src"]
+#VOLUME ["/src"]
 
 
 EXPOSE 3000
