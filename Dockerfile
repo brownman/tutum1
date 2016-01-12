@@ -26,7 +26,7 @@ RUN apt-get -qqy update && \
 
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
-ADD project /tmp
+ADD . /tmp
 
 RUN chmod 755 /tmp/project/install.sh && \
     /tmp/project/install.sh
