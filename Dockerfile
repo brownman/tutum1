@@ -28,8 +28,8 @@ RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 ADD project /tmp
 
-RUN chmod +x /tmp/project/install_globally.sh && \
-    /tmp/project/install_globally.sh
+RUN chmod 755 /tmp/project/install.sh && \
+    /tmp/project/install.sh
 
 #RUN curl https://www.npmjs.com/install.sh | clean=no sh
 RUN git clone https://github.com/nathanleclaire/wetty.git && \
