@@ -26,12 +26,18 @@ RUN apt-get -qqy update && \
 
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
+ADD package /tmp
+
+RUN chmod +x /tmp/package/install_globally.sh && \
+    /tmp/package/install_globally.sh
+
 #RUN curl https://www.npmjs.com/install.sh | clean=no sh
 RUN git clone https://github.com/nathanleclaire/wetty.git && \
         cd wetty && \
             npm install
 
 RUN sed 's@/bin/login@/bin/bash@' -i /root/wetty/app.js
+
 
 #
 EXPOSE 3002
