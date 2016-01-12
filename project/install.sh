@@ -1,4 +1,4 @@
-#!/bin/sh
+
 
 cd /tmp/project
 npm install -g
