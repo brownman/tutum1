@@ -2,4 +2,4 @@
 
 cd /tmp/project
 npm install -g
-#node_modules/bower/bin/bower install -g
+node node_modules/bower/bin/bower install -g
