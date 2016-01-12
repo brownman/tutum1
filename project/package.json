@@ -20,9 +20,8 @@
   "scripts": {
     "test": "mocha",
     "start": "NODE_ENV=dev node server/server.js",
-    "dev": "nodemon server/server.js --watch server --watch common --ext js,json ",
-    "postinstall": "./bower install -f --allow-root  --config.interactive=false && NODE_ENV=dev ./grunt build"
-  },
+    "dev": "nodemon server/server.js --watch server --watch common --ext js,json "
+    },
   "main": "server/server.js",
   "dependencies": {
     "amqplib": "^0.4.0",
