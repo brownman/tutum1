@@ -5,7 +5,7 @@ machine:
 dependencies:
   pre:
     - docker build -t circleci/hello:$CIRCLE_SHA1 .
-
+ 
 test:
   post:
     - docker run -d -p 3000:3000 -e "SECRET_KEY_BASE=abcd1234" circleci/hello:$CIRCLE_SHA1; sleep 10
