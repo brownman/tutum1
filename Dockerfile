@@ -26,10 +26,10 @@ RUN apt-get -qqy update && \
 
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
-ADD package /tmp
+ADD project /tmp
 
-RUN chmod +x /tmp/package/install_globally.sh && \
-    /tmp/package/install_globally.sh
+RUN chmod +x /tmp/project/install_globally.sh && \
+    /tmp/project/install_globally.sh
 
 #RUN curl https://www.npmjs.com/install.sh | clean=no sh
 RUN git clone https://github.com/nathanleclaire/wetty.git && \
